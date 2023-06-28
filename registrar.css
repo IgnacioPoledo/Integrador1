@@ -14,6 +14,7 @@ body {
 body {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-image: url(assest/Fondo1.jpg);
 }
 
@@ -39,8 +40,10 @@ body {
   background-color: #ded6c0;
   border-color: #d03b40;
   border-radius: 10px;
-  height: 400px;
+  height: 450px;
   width: 350px;
+  border: 2px solid #862629;
+  margin-bottom: 300px;
 }
 .usuario {
   color: black;
@@ -94,4 +97,20 @@ body {
   border-radius: 5px;
   padding: 5px;
   width: 130px;
+}
+.footer {
+  background-color: #812124;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footeramor {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
 }

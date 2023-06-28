@@ -4,7 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  /*border: 1px solid red; */
+  /* border: 1px solid red; */
 }
 
 body {
@@ -33,6 +33,7 @@ body {
 .navbar i {
   font-size: 26px;
   display: none;
+  color: white;
 }
 #toggle-menu {
   display: none;
@@ -76,7 +77,6 @@ h1 {
 
 .division {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -146,7 +146,7 @@ h1 {
   align-items: flex-start;
   flex-direction: column;
   width: 50%;
-  gap: 80px;
+  gap: 120px;
   padding-left: 35px;
   padding-top: 50px;
   margin-left: 80px;
@@ -227,11 +227,13 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 10px;
+  gap: 20px;
 }
 
 .nos {
   color: #ded6c0;
-  margin-top: -50px;
+  margin-top: ;
   margin-bottom: 10px;
 }
 
@@ -342,15 +344,48 @@ h1 {
 }
 
 /* MEDIA QUERIES TABLET */
+
 @media (max-width: 992px) {
   .head {
     position: absolute;
-    gap: 60px;
+    gap: 737px;
   }
+  .navbar-list {
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    font-size: 14px;
+  }
+
+  .navbar ul {
+    background: #d03b40e0;
+    width: 40%;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 15px 15px;
+    border: 3px solid #72202370;
+    border-top: 0;
+    display: none;
+    padding: 45px 0;
+    gap: 46px;
+    z-index: 2;
+  }
+  .navbar i {
+    display: block;
+    cursor: pointer;
+  }
+  #toggle-menu:checked ~ .navbar-list {
+    display: flex;
+  }
+
   h1 {
-    font-size: 44px;
-    padding-left: 300px;
-    padding-right: 300px;
+    font-size: 48px;
+    padding-left: 295px;
+    padding-right: 270px;
     position: relative;
   }
   .intro {
@@ -358,32 +393,42 @@ h1 {
     padding-left: 100px;
     padding-right: 100px;
   }
-
-  .ven {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
+  .division {
+    flex-direction: column;
   }
-  .domingos {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
+  .brunch {
+    width: 100%;
+    height: 300px;
   }
-  .celebra {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
+  .fiestas {
+    width: 100%;
+    height: 300px;
   }
-  .descripfiestas {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
+  #productos {
+    height: 1100px;
   }
   .panydulces {
     margin-left: 10px;
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
   }
   .tortaseingredientes {
-    margin-left: 200px;
+    position: relative;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 147px;
+  }
+  .contactoyubi {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto {
+    width: 100%;
+  }
+  #ubicacion {
+    width: 100%;
   }
   .mapa {
     margin-left: 10px;
@@ -395,42 +440,36 @@ h1 {
 /* MEDIA QUERIES CELULAR */
 
 @media (max-width: 576px) {
-  .navbar ul {
-    background: #d03b40e1;
-    width: 87%;
-    position: absolute;
-    top: 65px;
-    left: 10%;
-    right: 10%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 0 15px 15px;
-    border: 3px solid #d03b40;
-    border-top: 0;
-    display: none;
-    padding: 45px 30px;
-    gap: 50px;
-    z-index: 2;
-    font-size: 20px;
-  }
-
-  .navbar i {
-    display: block;
-    cursor: pointer;
-    color: white;
-  }
-  .fa-solid {
-    margin-left: 180px;
-  }
-  #toggle-menu:checked ~ .navbar-list {
-    display: flex;
+  .head {
+    gap: 317px;
   }
   h1 {
-    font-size: 30px;
-    text-align: center;
+    font-size: 40px;
+    padding-left: 143px;
+    padding-right: 124px;
   }
-  img {
-    height: 70px;
+  .intro {
+    padding-left: 22px;
+    padding-right: 15px;
+  }
+  .domingos {
+    text-align: center;
+    padding: 0 50px 0 50px;
+  }
+  #productos {
+    height: 1045px;
+  }
+  .descripfiestas {
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+  .tortaseingredientes {
+    padding-left: 35px;
+  }
+  .nos {
+    margin-top: 10px;
+  }
+  .sabes {
+    margin-top: 5px;
   }
 }
